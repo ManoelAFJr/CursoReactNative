@@ -4,6 +4,8 @@ import React from "react";
 // eslint-disable-next-line import/no-anonymous-default-export
 export default props =>{
     const bt = props.pressButton;
+    const gerarIdade = () => parseInt(Math.random() * (20)) + 50;
+    const gerarNerd = () => Math.random() > 0.5;
     return(
         <div>
             <div>
@@ -11,7 +13,7 @@ export default props =>{
             </div>
             <button onClick = {
                 function (e){
-                bt('Assilon', 78, true)
+                bt('Assilon', gerarIdade(), gerarNerd())
             }}>Fornece Informação</button>           
         </div>
     );
