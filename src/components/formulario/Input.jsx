@@ -16,8 +16,11 @@ export default (props) => {
           flexDirection: "column",
         }}
       >
+        {/* onchange busca na função sempre que a função mudar "quando digitado algo" */}
         <input value={valor} onChange={quandoMudar} />
+        {/* compponente somente para leitura readOnly */}
         <input value={valor} readOnly />
+        {/* Componente não controlado */}
         <input value={undefined} />
       </div>
     </div>

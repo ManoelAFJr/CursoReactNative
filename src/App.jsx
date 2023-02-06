@@ -15,6 +15,7 @@ import UsuarioInfo from "./components/condicional/UsuarioInfo";
 import DiretaPai from "./components/condicional/Comunicação/DiretaPai";
 import IndiretaPai from "./components/condicional/Comunicação/IndiretaPai";
 import Input from "./components/formulario/Input";
+import Contador from "./components/contador/Contador";
 
 const tag = <strong> Manoel Junior </strong>;
 
@@ -24,6 +25,10 @@ export default function App() {
       <h1>Fundamentos do React</h1>
       <div className="Cards">
         
+      <Card titulo="#13 Contador" color="#00FF00">
+          <Contador valor = {10}> </Contador>
+        </Card>
+
         <Card titulo="#12 Componentes Controlados" color="#59298894">
           <Input></Input>
         </Card>
